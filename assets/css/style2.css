@@ -1,0 +1,357 @@
+:root {
+  /* Color settings */
+  --color-background: rgba(255,255,255,1);
+  --color-text: rgba(0,0,0,1);
+  --color-text-link: rgba(0,0,255,0.8);
+  --color-text-link-hover: rgba(0,0,255,0.4);
+  /* Font settings */
+  --font-family:IBM Plex Mono;
+  --font-size: 24px;
+  /* Margins settings */
+  --margin: 1rem;
+}
+
+* {
+box-sizing: border-box;
+background-color: #4C4E52;
+}
+
+/* m2enu button *//* menu button *//* menu button */
+#navbar {
+    position: fixed;
+    top:0;
+    right:0;
+    width: 45%;
+    padding: 1rem;
+    overflow: hidden;
+    z-index: +1;
+    font-family: IBM Plex Mono;
+}
+
+#navbar.is-hidden{
+  display:none;
+}
+#navbar.closed {
+  background: transparent;
+  pointer-events: none;
+}
+
+#navbar.closed ul { 
+  display: none;
+}
+#navbar > a.toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  pointer-events: all;
+  cursor: pointer;
+}
+#navbar > a.toggle:after {
+  content: 'CLOSE';
+}
+#navbar.closed > a.toggle:after {
+  content: 'MENU';
+}
+#navbar a {
+  /* float: left; */
+  display:inline;
+  color: #eee9dc;
+  text-align: left;
+  margin-right: 1rem;
+  text-decoration: none;
+  background-color: transparent;
+  font-family: IBM Plex Mono;
+  font-size: 0.50em;
+  font-weight: 500;
+  
+}
+#navbar a:hover {
+  background-color:#eee9dc; ;
+  color: #4C4E52;
+}
+
+#navbar a.active {
+  background-color: transparent;
+  color:#eee9dc;
+}
+/* menu button *//* menu button *//* menu button */
+
+.title{
+  font-size: 3rem;
+  font-weight: bold;
+  color: #eee9dc;
+  line-height: 80px;
+  position: relative;
+  text-align: center;
+}
+
+.content {
+  padding: 100px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+#site-navigation{
+  font-size: 1.3em;
+  line-height: 130%;
+  margin-top: -6vh;
+  margin-bottom: 10vh
+}
+
+ul{
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+
+
+li:nth-of-type(4) a {
+  padding-left: 6%;
+}
+li:nth-of-type(5) a {
+  padding-left: 6%;
+}
+li:nth-of-type(7) a {
+  padding-left: 6%;
+}
+li:nth-of-type(8) a {
+  padding-left: 6%;
+}
+li:nth-of-type(10) a {
+  padding-left: 6%;
+}
+li:nth-of-type(11) a {
+  padding-left: 6%;
+}
+
+a:link  { text-decoration: none; color: #eee9dc; }
+a:hover { text-decoration: none; color: #eee9dc; }
+a:visited { text-decoration: none; color: #eee9dc; }
+a:focus { text-decoration: none; color: #eee9dc; }
+a:active { text-decoration: none; color:#eee9dc; }
+
+#conditions{
+font-weight: 800;
+}
+
+#conditions2{
+  text-indent: 3%;
+}
+
+h4{
+  text-indent: 7%;
+}
+
+
+section.section-text-block{
+  position:sticky;
+  display:flex;
+  flex-direction:row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  width: 100%;
+  height:auto;
+  border: none;
+  font-family: IBM Plex Mono;
+  margin-top: 50vh;
+  color: #eee9dc;
+  widows: 3;
+
+}
+
+/* title and table of content *//* title and table of content */
+/* section.section-text-block.text-block-is-intro{
+  min-height:100vh;
+} */
+
+
+/* #site-navigation.fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: +1;
+  color: #eee9dc;
+} */
+
+/* #site-navigation.subsection-is-journal{
+  font-style: italic;
+} */
+
+/* title and table of content *//* title and table of content */
+
+section.section-text-block.order-reversed{
+  flex-direction:row-reverse;
+}
+
+section.section-text-block .subsection{
+  position:sticky;
+  display:block;
+  padding-left: 1rem;
+  width: 50%;
+  /* margin-top:1rem; */
+  /* padding:1rem; */
+  /* background-color: white; */
+}
+
+section.section-text-block .subsection:empty { 
+  height: 0; 
+  opacity: 0;
+}
+
+section.section-text-block .subsection.subsection-is-journal{
+  /* background-color:transparent; */
+  /* font-size: 1rem; */
+  
+}
+.subsection-is-main {
+  line-height: 1.7;
+  font-size: 0.55em;
+  font-weight: 500;
+
+}
+
+
+.subsection-is-journal *{
+  font-style: italic;
+  line-height: 1.5;
+  width: 90%;
+  padding-left: 10%;
+  font-size: 0.55em;
+  font-weight:600;
+  color: #a9a9a9;
+
+
+}
+
+.subsection-is-journal{
+   /* why padding gets adjusted in the table of content?? */
+} 
+ 
+
+.subsection-is-main.footnotes-list{
+}
+
+.modal-image{
+  position:fixed;
+  display:block;
+  width:100vw;
+  height:100vh;
+  top:0;
+  left:0;
+  z-index:99999;
+  cursor: pointer;
+}
+
+.modal-image.is-hidden{
+  display:none;
+}
+
+.modal-image figure{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+.modal-image figure img{
+  position: relative;
+  display: block;
+  width:60vw;
+  height:60vh;
+  margin:0;
+  padding:0;
+  object-fit: contain;
+  z-index:99999;
+}
+
+.modal-image figure figcaption{
+  position: relative;
+  display: block;
+  width: 60%;
+}
+
+.modal-image figure figcaption p{
+  text-align: center;
+  color: #fff;
+  background-color: rgb(4, 76, 17);
+ }
+
+
+@media (max-width: 600px) {
+  section.section-text-block {
+
+    flex-direction: column;
+    position:relative;
+  }
+
+  section.section-text-block.order-reversed {
+
+    flex-direction: column-reverse;
+  }
+
+  section.section-text-block a {
+    /* color: lime */
+  }
+
+  section.section-text-block .subsection{
+    width:100%;
+    box-sizing: border-box;
+  }
+}
+
+
+
+
+
+@media (max-width: 298px) { 
+  :root{ --font-size: 15px; } html, body {font: var(--font-size) var(--font-family);} 
+}
+@media (min-width: 299px) and (max-width: 339px) { 
+  :root{ --font-size: 16px; } html, body {font: var(--font-size) var(--font-family);} 
+}
+@media (min-width: 340px) and (max-width: 439px) { 
+  :root{ --font-size: 17px; } html, body {font: var(--font-size) var(--font-family);} 
+}
+@media (min-width: 440px) and (max-width: 599px) { 
+  :root{ --font-size: 18px; } html, body {font: var(--font-size) var(--font-family);}
+}
+@media (min-width: 600px) and (max-width: 779px) { 
+  :root{ --font-size: 19px; } html, body {font: var(--font-size) var(--font-family);}
+}
+@media (min-width: 780px) and (max-width: 992px) { 
+  :root{ --font-size: 20px; } html, body {font: var(--font-size) var(--font-family);}
+}
+@media (min-width: 993px) and (max-width: 1200px) { 
+  :root{ --font-size: 22px; } html, body {font: var(--font-size) var(--font-family);}
+}
+@media (min-width: 1201px) and (max-width: 1319px) { 
+  :root{ --font-size: 24px; } html, body {font: var(--font-size) var(--font-family);}
+}
+@media (min-width: 1320px) and (max-width: 1619px) { 
+  :root{ --font-size: 26px; } html, body {font: var(--font-size) var(--font-family);}
+}
+@media (min-width: 1620px) and (max-width: 1879px) { 
+  :root{ --font-size: 28px; } html, body {font: var(--font-size) var(--font-family);}
+}
+@media (min-width: 1880px) { 
+  :root{ --font-size: 30px; } html, body {font: var(--font-size) var(--font-family);}
+}
