@@ -230,26 +230,25 @@ section.section-text-block .subsection.subsection-is-journal{
 }
 
 
-.subsection-is-journal *{
+.subsection-is-journal {
   font-style: italic;
+  width: 80%;
   line-height: 1.5;
-  width: 90%;
   padding-left: 10%;
   font-size: 0.55em;
   font-weight:600;
   color: #a9a9a9;
-
+  top:1rem;
   position: sticky;
   position: -webkit-sticky;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
 }
-
-.subsection-is-journal{
-   /* why padding gets adjusted in the table of content?? */
-} 
- 
+.subsection-is-journal p {
+  margin-left: 5%;
+  width: 90%;
+}
 
 .subsection-is-main.footnotes-list{
 }
