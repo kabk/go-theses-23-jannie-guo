@@ -322,7 +322,7 @@ color: #f5d37b;
 
 @media (max-width: 600px) {
   section.section-text-block {
-    margin: 10%;
+    margin-right: 10%;
     flex-direction: column;
     position:relative;
   }
