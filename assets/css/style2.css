@@ -26,7 +26,7 @@ body{
     position: fixed;
     top:0;
     right:0;
-    width: 45%;
+    width: 48%;
     padding: 2%;
     padding-top: 3.5%;
     overflow: hidden;
@@ -232,7 +232,7 @@ section.section-text-block .subsection.subsection-is-journal{
 
 .subsection-is-journal {
   font-style: italic;
-  width: 80%;
+  width: 85%;
   line-height: 1.5;
   padding-left: 10%;
   font-size: 0.55em;
@@ -245,7 +245,7 @@ section.section-text-block .subsection.subsection-is-journal{
   /* justify-content: center; */
   /* align-items: center; */
 }
-.subsection-is-journal p {
+.subsection-is-journal p{
   margin-left: 5%;
   width: 90%;
 }
@@ -311,13 +311,18 @@ section.section-text-block .subsection.subsection-is-journal{
   font-style: italic;
   font-size: 0.50em;
   font-weight: 600;
-  line-height: ;
+  line-height: 1.5;
  }
+
+.fig{
+color: #f5d37b;
+}
+
 
 
 @media (max-width: 600px) {
   section.section-text-block {
-
+    margin: 10%;
     flex-direction: column;
     position:relative;
   }
@@ -337,6 +342,9 @@ section.section-text-block .subsection.subsection-is-journal{
   }
 }
 
+.end{
+  
+}
 
 
 
