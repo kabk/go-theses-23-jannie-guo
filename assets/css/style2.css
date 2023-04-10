@@ -16,6 +16,11 @@
 html, body {
   font-size: clamp( 20px, 2.25vw, 28px); 
   font-family: var(--font-family);
+
+
+	
+	-webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 * {
@@ -341,8 +346,15 @@ color: #f5d37b;
 
 
 @media (max-width: 600px) {
+main {
+  scroll-padding-top: 12px;
+}
+  .title {
+    font-size: min(14vw, 50px);
+    line-height: 1.2;
+  }
   section.section-text-block {
-    margin-right: 10%;
+    margin-right: 0; /* 10%; */
     flex-direction: column;
     position:relative;
   }
@@ -358,6 +370,7 @@ color: #f5d37b;
 
   section.section-text-block .subsection{
     width:100%;
+    padding: 1rem;
     box-sizing: border-box;
   }
 
